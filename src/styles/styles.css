@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#search-input {
+    width: calc(100% - 30px);
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+#search-input:focus {
+    border-color: #666;
+    box-shadow: 0 0 5px rgb(98, 98, 100);
+}
+
+.user-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.user-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.user-card h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+    position: relative;
+    font-weight: 600;
+}
+
+
+.user-card p {
+    margin: 5px 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+.user-card p strong {
+    color: #4d4d4d;
+}
+
+@media (max-width: 600px) {
+    #search-input {
+        font-size: 14px;
+    }
+
+    .user-card {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .user-card h3 {
+        font-size: 20px;
+    }
+}
